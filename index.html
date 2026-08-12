@@ -1,0 +1,724 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Abogado Josué Fernández · Protección familiar y legado</title>
+<meta name="description" content="Abogado patrimonial. Testamentos, declaración sucesoral y usufructo. Dejar todo en orden hoy evita conflictos mañana. Atención directa y confidencial.">
+<meta name="theme-color" content="#0B1D3A">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Marcellus&family=Jost:wght@300;400;500;600&family=Petit+Formal+Script&display=swap" rel="stylesheet">
+<style>
+/* ============ TOKENS ============ */
+:root{
+  --navy-900:#0B1D3A;
+  --navy-800:#102748;
+  --navy-700:#16345E;
+  --gold:#C39A4E;
+  --gold-lit:#E7CB8E;
+  --gold-deep:#9C7734;
+  --paper:#FFFFFF;
+  --bone:#F6F3EC;
+  --bone-2:#EFEAE0;
+  --ink:#111725;
+  --ink-soft:#3C4557;
+  --ink-mute:#727C8E;
+  --line:rgba(11,29,58,.12);
+  --line-gold:rgba(195,154,78,.38);
+  --shadow-s:0 2px 10px rgba(11,29,58,.06);
+  --shadow-m:0 18px 44px -18px rgba(11,29,58,.28);
+  --shadow-l:0 40px 90px -40px rgba(11,29,58,.45);
+  --display:"Marcellus",Georgia,serif;
+  --body:"Jost",system-ui,-apple-system,"Segoe UI",sans-serif;
+  --script:"Petit Formal Script",cursive;
+  --maxw:1180px;
+}
+
+/* ============ BASE ============ */
+*,*::before,*::after{box-sizing:border-box}
+html{scroll-behavior:smooth;-webkit-text-size-adjust:100%}
+body{
+  margin:0;background:var(--paper);color:var(--ink);
+  font-family:var(--body);font-weight:300;font-size:17px;line-height:1.72;
+  -webkit-font-smoothing:antialiased;overflow-x:hidden;
+}
+img{max-width:100%;display:block}
+a{color:inherit;text-decoration:none}
+h1,h2,h3,h4{font-family:var(--display);font-weight:400;line-height:1.12;margin:0;letter-spacing:.005em}
+p{margin:0 0 1.1em}
+p:last-child{margin-bottom:0}
+::selection{background:var(--gold);color:#fff}
+:focus-visible{outline:2px solid var(--gold);outline-offset:3px;border-radius:2px}
+
+.wrap{width:100%;max-width:var(--maxw);margin:0 auto;padding:0 26px}
+.eyebrow{
+  font-family:var(--body);font-size:11.5px;font-weight:500;letter-spacing:.26em;
+  text-transform:uppercase;color:var(--gold-deep);margin:0 0 18px;display:flex;
+  align-items:center;gap:12px;
+}
+.eyebrow::before{content:"";width:26px;height:1px;background:var(--gold);flex:none}
+.eyebrow.on-navy{color:var(--gold-lit)}
+.script{font-family:var(--script);font-weight:400;color:var(--gold);}
+
+/* ============ TOPBAR ============ */
+.topbar{background:var(--navy-900);color:rgba(255,255,255,.72);font-size:12.5px;letter-spacing:.06em}
+.topbar .wrap{display:flex;justify-content:space-between;align-items:center;gap:16px;height:38px}
+.topbar a{transition:color .25s}
+.topbar a:hover{color:var(--gold-lit)}
+.topbar .tb-r{display:flex;gap:22px;align-items:center}
+@media(max-width:760px){.topbar .tb-l{display:none}.topbar .wrap{justify-content:center}}
+
+/* ============ NAV ============ */
+.nav{position:sticky;top:0;z-index:60;background:rgba(255,255,255,.94);backdrop-filter:blur(12px);
+  -webkit-backdrop-filter:blur(12px);border-bottom:1px solid var(--line);transition:box-shadow .3s,background .3s}
+.nav.stuck{box-shadow:var(--shadow-s)}
+.nav .wrap{display:flex;align-items:center;justify-content:space-between;height:84px;gap:20px}
+.brand{display:flex;align-items:center;gap:13px;min-width:0}
+.brand svg{flex:none}
+.brand-txt{display:flex;flex-direction:column;line-height:1;min-width:0}
+.brand-txt .b1{font-family:var(--body);font-size:9.5px;letter-spacing:.34em;color:var(--gold-deep);text-transform:uppercase;margin-bottom:5px}
+.brand-txt .b2{font-family:var(--display);font-size:21px;letter-spacing:.09em;color:var(--navy-900);text-transform:uppercase;white-space:nowrap}
+.brand-txt .b3{font-family:var(--body);font-size:9.5px;letter-spacing:.2em;color:var(--ink-mute);text-transform:uppercase;margin-top:5px}
+.nav-links{display:flex;gap:32px;align-items:center}
+.nav-links a{font-size:14px;letter-spacing:.04em;color:var(--ink-soft);position:relative;padding:6px 0;font-weight:400}
+.nav-links a::after{content:"";position:absolute;left:0;bottom:0;height:1px;width:0;background:var(--gold);transition:width .32s cubic-bezier(.22,1,.36,1)}
+.nav-links a:hover{color:var(--navy-900)}
+.nav-links a:hover::after{width:100%}
+@media(max-width:940px){.nav-links{display:none}.nav .wrap{height:72px}}
+
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:9px;font-family:var(--body);
+  font-size:13.5px;font-weight:500;letter-spacing:.1em;text-transform:uppercase;padding:15px 28px;
+  border:1px solid transparent;cursor:pointer;transition:.3s cubic-bezier(.22,1,.36,1);white-space:nowrap}
+.btn-gold{background:linear-gradient(135deg,var(--gold) 0%,var(--gold-lit) 52%,var(--gold) 100%);
+  color:var(--navy-900);box-shadow:0 10px 26px -12px rgba(195,154,78,.9)}
+.btn-gold:hover{transform:translateY(-2px);box-shadow:0 18px 34px -14px rgba(195,154,78,.95)}
+.btn-outline{border-color:var(--navy-900);color:var(--navy-900);background:transparent}
+.btn-outline:hover{background:var(--navy-900);color:#fff}
+.btn-ghost-gold{border-color:var(--line-gold);color:var(--gold-lit);background:transparent}
+.btn-ghost-gold:hover{background:rgba(195,154,78,.12);border-color:var(--gold)}
+.btn-sm{padding:12px 22px;font-size:12px}
+
+/* ============ HERO ============ */
+.hero{position:relative;background:var(--bone);overflow:hidden;padding:88px 0 100px}
+.hero::before{content:"";position:absolute;inset:0;
+  background:radial-gradient(120% 90% at 88% 12%,rgba(195,154,78,.16) 0%,transparent 58%);pointer-events:none}
+.hero-grid{position:relative;display:grid;grid-template-columns:1.08fr .92fr;gap:64px;align-items:center}
+.hero h1{font-size:clamp(40px,5.6vw,68px);color:var(--navy-900);margin:0 0 8px;letter-spacing:.01em}
+.hero h1 .l2{display:block}
+.hero .script-line{display:block;font-family:var(--script);font-size:clamp(52px,7.4vw,92px);
+  color:var(--gold);line-height:.98;margin:2px 0 0 -3px}
+.hero-rule{width:100%;max-width:330px;height:1px;background:linear-gradient(90deg,var(--gold),rgba(195,154,78,0));margin:22px 0 26px}
+.hero-sub{font-size:18.5px;color:var(--ink-soft);max-width:47ch;line-height:1.78}
+.hero-cta{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.hero-note{display:flex;align-items:center;gap:10px;margin-top:28px;font-size:13.5px;color:var(--ink-mute);letter-spacing:.03em}
+.pulse{width:7px;height:7px;border-radius:50%;background:var(--gold);position:relative;flex:none}
+.pulse::after{content:"";position:absolute;inset:-5px;border-radius:50%;border:1px solid var(--gold);opacity:.5;animation:pulse 2.6s ease-out infinite}
+@keyframes pulse{0%{transform:scale(.6);opacity:.7}100%{transform:scale(1.5);opacity:0}}
+
+/* --- Signature: el arco dorado + tarjeta sello --- */
+.hero-art{position:relative;display:flex;justify-content:center;align-items:center;min-height:430px}
+.arc{position:absolute;width:132%;height:132%;left:-13%;top:-16%;pointer-events:none}
+.arc path{fill:none;stroke:var(--gold);stroke-width:2.2;stroke-linecap:round;
+  stroke-dasharray:1400;stroke-dashoffset:1400;animation:draw 2.1s cubic-bezier(.65,0,.35,1) .35s forwards}
+.arc path.thin{stroke-width:1;opacity:.42;animation-delay:.6s}
+@keyframes draw{to{stroke-dashoffset:0}}
+
+.seal{position:relative;width:100%;max-width:392px;background:var(--navy-900);color:#fff;
+  padding:46px 40px 40px;box-shadow:var(--shadow-l);border:1px solid rgba(195,154,78,.3)}
+.seal::before{content:"";position:absolute;inset:9px;border:1px solid rgba(195,154,78,.28);pointer-events:none}
+.seal-ico{width:52px;height:52px;margin:0 auto 22px;display:block}
+.seal-ico path,.seal-ico circle,.seal-ico line{stroke:var(--gold-lit)}
+.seal h3{font-size:24px;text-align:center;letter-spacing:.03em;margin-bottom:6px}
+.seal .seal-sub{text-align:center;font-size:11.5px;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--gold);margin-bottom:26px}
+.seal ul{list-style:none;margin:0;padding:0}
+.seal li{display:flex;gap:12px;align-items:flex-start;padding:13px 0;font-size:14.5px;
+  color:rgba(255,255,255,.82);border-top:1px solid rgba(255,255,255,.1);line-height:1.5}
+.seal li:first-child{border-top:0}
+.seal li svg{flex:none;margin-top:4px}
+.seal-foot{margin-top:26px;padding-top:20px;border-top:1px solid rgba(195,154,78,.28);text-align:center;
+  font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:rgba(255,255,255,.5)}
+
+@media(max-width:940px){
+  .hero{padding:56px 0 70px}
+  .hero-grid{grid-template-columns:1fr;gap:52px}
+  .hero-art{min-height:0;order:2}
+  .arc{display:none}
+  .hero-sub{max-width:none}
+}
+
+/* ============ FRANJA DE CONFIANZA ============ */
+.trust{background:var(--navy-900);color:#fff;position:relative}
+.trust::after{content:"";position:absolute;left:0;right:0;bottom:0;height:2px;
+  background:linear-gradient(90deg,transparent,var(--gold),transparent)}
+.trust .wrap{display:grid;grid-template-columns:repeat(3,1fr);gap:0;padding-top:0;padding-bottom:0}
+.trust-item{display:flex;align-items:center;gap:16px;padding:32px 30px;border-left:1px solid rgba(255,255,255,.09)}
+.trust-item:first-child{border-left:0;padding-left:0}
+.trust-item:last-child{padding-right:0}
+.trust-item svg{flex:none}
+.trust-item strong{display:block;font-family:var(--display);font-size:17px;font-weight:400;letter-spacing:.02em;margin-bottom:3px}
+.trust-item span{font-size:13.5px;color:rgba(255,255,255,.6);line-height:1.5}
+@media(max-width:840px){
+  .trust .wrap{grid-template-columns:1fr}
+  .trust-item{border-left:0;border-top:1px solid rgba(255,255,255,.09);padding:24px 0}
+  .trust-item:first-child{border-top:0}
+}
+
+/* ============ SECCIONES ============ */
+.sec{padding:104px 0}
+.sec-bone{background:var(--bone)}
+.sec-navy{background:var(--navy-900);color:#fff}
+.sec-head{max-width:660px;margin-bottom:56px}
+.sec-head.center{margin-left:auto;margin-right:auto;text-align:center}
+.sec-head.center .eyebrow{justify-content:center}
+.sec-head h2{font-size:clamp(31px,4vw,45px);color:var(--navy-900);margin-bottom:18px}
+.sec-navy .sec-head h2{color:#fff}
+.sec-head p{font-size:17.5px;color:var(--ink-soft)}
+.sec-navy .sec-head p{color:rgba(255,255,255,.68)}
+@media(max-width:840px){.sec{padding:72px 0}.sec-head{margin-bottom:42px}}
+
+/* --- Sobre --- */
+.about{display:grid;grid-template-columns:1fr 1fr;gap:70px;align-items:start}
+.about-list{list-style:none;margin:0;padding:0}
+.about-list li{display:flex;gap:16px;padding:20px 0;border-top:1px solid var(--line)}
+.about-list li:first-child{border-top:0;padding-top:0}
+.about-list svg{flex:none;margin-top:5px}
+.about-list strong{display:block;font-family:var(--display);font-size:18px;font-weight:400;
+  color:var(--navy-900);margin-bottom:4px;letter-spacing:.02em}
+.about-list span{font-size:15px;color:var(--ink-soft);line-height:1.62}
+.quote{margin-top:38px;padding:28px 30px;background:var(--paper);border-left:3px solid var(--gold);
+  box-shadow:var(--shadow-s);font-family:var(--display);font-size:20px;line-height:1.5;color:var(--navy-900)}
+.sec-bone .quote{background:var(--paper)}
+@media(max-width:940px){.about{grid-template-columns:1fr;gap:44px}}
+
+/* --- Servicios --- */
+.svc-grid{display:grid;grid-template-columns:repeat(3,1fr);gap:26px}
+.svc{position:relative;background:var(--paper);border:1px solid var(--line);padding:42px 32px 36px;
+  transition:transform .38s cubic-bezier(.22,1,.36,1),box-shadow .38s,border-color .38s;display:flex;flex-direction:column}
+.svc::before{content:"";position:absolute;left:0;top:0;height:2px;width:0;background:var(--gold);
+  transition:width .45s cubic-bezier(.22,1,.36,1)}
+.svc:hover{transform:translateY(-7px);box-shadow:var(--shadow-m);border-color:var(--line-gold)}
+.svc:hover::before{width:100%}
+.svc-ico{width:62px;height:62px;border-radius:50%;background:var(--navy-900);display:flex;
+  align-items:center;justify-content:center;margin-bottom:26px;flex:none;transition:background .38s}
+.svc:hover .svc-ico{background:var(--navy-700)}
+.svc h3{font-size:22px;color:var(--navy-900);margin-bottom:8px}
+.svc .svc-tag{font-size:11px;letter-spacing:.2em;text-transform:uppercase;color:var(--gold-deep);margin-bottom:16px}
+.svc p{font-size:15px;color:var(--ink-soft);line-height:1.68}
+.svc ul{list-style:none;margin:18px 0 0;padding:0}
+.svc ul li{position:relative;padding-left:20px;font-size:14px;color:var(--ink-soft);margin-bottom:8px}
+.svc ul li::before{content:"";position:absolute;left:0;top:9px;width:7px;height:7px;
+  border:1px solid var(--gold);transform:rotate(45deg)}
+.svc-link{margin-top:26px;padding-top:20px;border-top:1px solid var(--line);font-size:13px;
+  letter-spacing:.13em;text-transform:uppercase;color:var(--navy-900);font-weight:500;
+  display:inline-flex;align-items:center;gap:9px;transition:gap .3s,color .3s}
+.svc-link:hover{gap:15px;color:var(--gold-deep)}
+@media(max-width:940px){.svc-grid{grid-template-columns:1fr;gap:20px}}
+
+/* --- Proceso --- */
+.steps{display:grid;grid-template-columns:repeat(3,1fr);gap:0;position:relative}
+.step{padding:0 34px;position:relative}
+.step:first-child{padding-left:0}
+.step:last-child{padding-right:0}
+.step::before{content:"";position:absolute;left:0;top:16px;bottom:0;width:1px;background:rgba(255,255,255,.12)}
+.step:first-child::before{display:none}
+.step-n{font-family:var(--display);font-size:13px;letter-spacing:.24em;color:var(--gold);margin-bottom:20px;display:block}
+.step-dot{width:11px;height:11px;border:1px solid var(--gold);transform:rotate(45deg);margin-bottom:24px}
+.step h3{font-size:23px;color:#fff;margin-bottom:12px}
+.step p{font-size:15px;color:rgba(255,255,255,.66);line-height:1.7}
+@media(max-width:840px){
+  .steps{grid-template-columns:1fr;gap:38px}
+  .step{padding:0 0 0 28px}
+  .step:first-child{padding-left:28px}
+  .step::before{display:block;left:0;top:6px;bottom:-38px}
+  .step:first-child::before{display:block}
+  .step:last-child::before{bottom:0}
+}
+
+/* --- FAQ --- */
+.faq{max-width:820px;margin:0 auto}
+.faq-item{border-top:1px solid var(--line)}
+.faq-item:last-child{border-bottom:1px solid var(--line)}
+.faq-q{width:100%;background:none;border:0;text-align:left;cursor:pointer;padding:26px 46px 26px 0;
+  font-family:var(--display);font-size:19.5px;color:var(--navy-900);position:relative;line-height:1.35;
+  transition:color .25s}
+.faq-q:hover{color:var(--gold-deep)}
+.faq-q::after,.faq-q::before{content:"";position:absolute;right:6px;top:50%;background:var(--gold);transition:transform .35s cubic-bezier(.22,1,.36,1)}
+.faq-q::after{width:15px;height:1.5px;margin-top:-.75px}
+.faq-q::before{width:1.5px;height:15px;margin-top:-7.5px;right:12.75px}
+.faq-item.open .faq-q::before{transform:rotate(90deg) scaleX(0)}
+.faq-a{max-height:0;overflow:hidden;transition:max-height .45s cubic-bezier(.22,1,.36,1)}
+.faq-a p{padding:0 40px 26px 0;font-size:16px;color:var(--ink-soft)}
+
+/* --- CTA final --- */
+.cta{position:relative;background:var(--navy-900);color:#fff;text-align:center;overflow:hidden;padding:110px 0}
+.cta::before{content:"";position:absolute;inset:0;
+  background:radial-gradient(70% 100% at 50% 0%,rgba(195,154,78,.22) 0%,transparent 62%)}
+.cta .wrap{position:relative;max-width:760px}
+.cta h2{font-size:clamp(32px,4.6vw,52px);margin-bottom:20px}
+.cta h2 .script{font-size:1.28em;line-height:1}
+.cta p{font-size:18px;color:rgba(255,255,255,.7);margin-bottom:38px}
+.cta-btns{display:flex;gap:14px;justify-content:center;flex-wrap:wrap}
+.cta-phone{margin-top:34px;font-family:var(--display);font-size:27px;letter-spacing:.09em;color:var(--gold-lit)}
+.cta-phone-lbl{font-size:11px;letter-spacing:.24em;text-transform:uppercase;color:rgba(255,255,255,.45);margin-bottom:6px}
+
+/* --- Footer --- */
+.foot{background:#081527;color:rgba(255,255,255,.55);font-size:14px;padding:56px 0 28px}
+.foot-grid{display:grid;grid-template-columns:1.5fr 1fr 1fr;gap:44px;padding-bottom:38px;
+  border-bottom:1px solid rgba(255,255,255,.09)}
+.foot h4{font-family:var(--body);font-size:11px;letter-spacing:.24em;text-transform:uppercase;
+  color:var(--gold);margin:0 0 18px;font-weight:500}
+.foot a{transition:color .25s}
+.foot a:hover{color:var(--gold-lit)}
+.foot ul{list-style:none;margin:0;padding:0}
+.foot li{margin-bottom:10px}
+.foot .f-brand{font-family:var(--display);font-size:22px;color:#fff;letter-spacing:.08em;
+  text-transform:uppercase;margin-bottom:10px}
+.foot .f-tag{font-size:11.5px;letter-spacing:.22em;text-transform:uppercase;color:var(--gold);margin-bottom:18px}
+.foot-bottom{padding-top:24px;display:flex;justify-content:space-between;gap:20px;flex-wrap:wrap;font-size:12.5px;color:rgba(255,255,255,.38)}
+@media(max-width:840px){.foot-grid{grid-template-columns:1fr;gap:34px}}
+
+/* --- WhatsApp flotante --- */
+.wa{position:fixed;right:20px;bottom:20px;z-index:80;width:56px;height:56px;border-radius:50%;
+  background:#25D366;display:flex;align-items:center;justify-content:center;
+  box-shadow:0 12px 30px -8px rgba(37,211,102,.6);transition:transform .3s}
+.wa:hover{transform:scale(1.08)}
+
+/* --- Reveal --- */
+.rv{opacity:0;transform:translateY(26px);transition:opacity .8s cubic-bezier(.22,1,.36,1),transform .8s cubic-bezier(.22,1,.36,1)}
+.rv.in{opacity:1;transform:none}
+@media(prefers-reduced-motion:reduce){
+  html{scroll-behavior:auto}
+  .arc path{animation:none;stroke-dashoffset:0}
+  .pulse::after{animation:none}
+}
+</style>
+</head>
+<body>
+
+<!-- TOPBAR -->
+<div class="topbar">
+  <div class="wrap">
+    <div class="tb-l">Tu patrimonio, nuestra prioridad.</div>
+    <div class="tb-r">
+      <a href="https://wa.me/584249746949">0424 974 6949</a>
+      <a href="https://instagram.com/patrimonioseguro.ve" target="_blank" rel="noopener">@patrimonioseguro.ve</a>
+    </div>
+  </div>
+</div>
+
+<!-- NAV -->
+<header class="nav" id="nav">
+  <div class="wrap">
+    <a href="#inicio" class="brand" aria-label="Abogado Josué Fernández">
+      <svg width="32" height="40" viewBox="0 0 32 40" fill="none" aria-hidden="true">
+        <rect x="2" y="34" width="28" height="4" fill="#C39A4E"/>
+        <rect x="5" y="30" width="22" height="3" fill="#0B1D3A"/>
+        <rect x="8" y="11" width="3.4" height="18" fill="#0B1D3A"/>
+        <rect x="14.3" y="11" width="3.4" height="18" fill="#C39A4E"/>
+        <rect x="20.6" y="11" width="3.4" height="18" fill="#0B1D3A"/>
+        <rect x="5" y="7" width="22" height="3" fill="#0B1D3A"/>
+        <rect x="2" y="2" width="28" height="4" fill="#C39A4E"/>
+      </svg>
+      <span class="brand-txt">
+        <span class="b1">Abogado</span>
+        <span class="b2">Josué Fernández</span>
+        <span class="b3">Abogado patrimonial</span>
+      </span>
+    </a>
+    <nav class="nav-links">
+      <a href="#servicios">Servicios</a>
+      <a href="#enfoque">Enfoque</a>
+      <a href="#proceso">Proceso</a>
+      <a href="#preguntas">Preguntas</a>
+    </nav>
+    <a href="https://wa.me/584249746949" class="btn btn-gold btn-sm">Consulta hoy</a>
+  </div>
+</header>
+
+<!-- HERO -->
+<section class="hero" id="inicio">
+  <div class="wrap hero-grid">
+    <div class="hero-copy">
+      <p class="eyebrow">Abogado patrimonial · Venezuela</p>
+      <h1>
+        Protección
+        <span class="l2">familiar y</span>
+        <span class="script-line">Legado</span>
+      </h1>
+      <div class="hero-rule"></div>
+      <p class="hero-sub">Dejar todo en orden hoy evita conflictos mañana. Redacto y tramito los documentos que aseguran que lo que construiste llegue a quien tú decides.</p>
+      <div class="hero-cta">
+        <a href="https://wa.me/584249746949" class="btn btn-gold">Agendar consulta</a>
+        <a href="#servicios" class="btn btn-outline">Ver servicios</a>
+      </div>
+      <div class="hero-note"><span class="pulse"></span> Atención directa y confidencial por WhatsApp</div>
+    </div>
+
+    <div class="hero-art">
+      <svg class="arc" viewBox="0 0 600 600" fill="none" aria-hidden="true">
+        <path d="M 560 -40 C 560 250, 420 470, 120 600"/>
+        <path class="thin" d="M 600 -10 C 600 265, 455 495, 155 630"/>
+      </svg>
+      <div class="seal">
+        <svg class="seal-ico" viewBox="0 0 48 48" fill="none" stroke-width="1.4" aria-hidden="true">
+          <line x1="24" y1="7" x2="24" y2="41" stroke-linecap="round"/>
+          <line x1="10" y1="14" x2="38" y2="14" stroke-linecap="round"/>
+          <circle cx="24" cy="7" r="2.4"/>
+          <path d="M10 14 L4 27 h12 z" stroke-linejoin="round"/>
+          <path d="M38 14 L32 27 h12 z" stroke-linejoin="round"/>
+          <line x1="16" y1="41" x2="32" y2="41" stroke-linecap="round"/>
+        </svg>
+        <h3>Asegura el futuro</h3>
+        <p class="seal-sub">de los tuyos</p>
+        <ul>
+          <li>
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M2.5 8.4l3.4 3.4L13.5 4.2" stroke="#E7CB8E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Documentos redactados y revisados por el abogado, no por una plantilla.
+          </li>
+          <li>
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M2.5 8.4l3.4 3.4L13.5 4.2" stroke="#E7CB8E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Todo explicado en palabras claras, sin lenguaje legal innecesario.
+          </li>
+          <li>
+            <svg width="15" height="15" viewBox="0 0 16 16" fill="none"><path d="M2.5 8.4l3.4 3.4L13.5 4.2" stroke="#E7CB8E" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg>
+            Acompañamiento hasta que el trámite queda cerrado.
+          </li>
+        </ul>
+        <p class="seal-foot">Tu patrimonio, nuestra prioridad</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- FRANJA DE CONFIANZA -->
+<section class="trust">
+  <div class="wrap">
+    <div class="trust-item">
+      <svg width="30" height="30" viewBox="0 0 32 32" fill="none" stroke="#C39A4E" stroke-width="1.3" aria-hidden="true">
+        <path d="M16 3l11 4.5v8c0 7-4.6 11.6-11 13.5C9.6 27.1 5 22.5 5 15.5v-8L16 3z" stroke-linejoin="round"/>
+        <path d="M11.5 15.8l3.2 3.2 6-6.4" stroke-linecap="round" stroke-linejoin="round"/>
+      </svg>
+      <div><strong>Confidencialidad absoluta</strong><span>Lo que hablamos no sale de la consulta.</span></div>
+    </div>
+    <div class="trust-item">
+      <svg width="30" height="30" viewBox="0 0 32 32" fill="none" stroke="#C39A4E" stroke-width="1.3" aria-hidden="true">
+        <circle cx="16" cy="11" r="4.6"/>
+        <path d="M6.5 27c0-4.9 4.3-8.2 9.5-8.2s9.5 3.3 9.5 8.2" stroke-linecap="round"/>
+      </svg>
+      <div><strong>Atención directa</strong><span>Hablas con el abogado, no con un intermediario.</span></div>
+    </div>
+    <div class="trust-item">
+      <svg width="30" height="30" viewBox="0 0 32 32" fill="none" stroke="#C39A4E" stroke-width="1.3" aria-hidden="true">
+        <rect x="7" y="4" width="18" height="24" stroke-linejoin="round"/>
+        <path d="M11.5 11h9M11.5 16h9M11.5 21h5.5" stroke-linecap="round"/>
+      </svg>
+      <div><strong>Trámite acompañado</strong><span>Del primer borrador al registro final.</span></div>
+    </div>
+  </div>
+</section>
+
+<!-- ENFOQUE -->
+<section class="sec" id="enfoque">
+  <div class="wrap">
+    <div class="about">
+      <div class="rv">
+        <p class="eyebrow">El enfoque</p>
+        <h2 style="font-size:clamp(31px,4vw,45px);color:var(--navy-900);margin-bottom:20px">Ordenar el patrimonio es un acto de cuidado, no un trámite.</h2>
+        <p style="font-size:17.5px;color:var(--ink-soft)">La mayoría de los conflictos familiares por herencias no nacen de la mala fe: nacen de la falta de documentos. Un testamento sin redactar, una declaración sucesoral vencida, una casa que nadie sabe a nombre de quién quedó.</p>
+        <p style="font-size:17.5px;color:var(--ink-soft)">Mi trabajo es cerrar esas puertas antes de que se abran. Reviso tu situación, te explico las opciones reales y dejo por escrito lo que tú decidas, con validez ante notaría y registro.</p>
+        <div class="quote">“Dejar todo en orden hoy evita conflictos mañana, y le brinda tranquilidad a tu familia.”</div>
+      </div>
+      <ul class="about-list rv">
+        <li>
+          <svg width="19" height="19" viewBox="0 0 20 20" fill="none"><path d="M3 10.5l4.2 4.2L17 4.5" stroke="#C39A4E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><strong>Primero se entiende, después se firma</strong><span>Nadie debería firmar un documento que no comprende. Te explico qué dice, qué efectos tiene y qué pasa si un día cambias de opinión.</span></div>
+        </li>
+        <li>
+          <svg width="19" height="19" viewBox="0 0 20 20" fill="none"><path d="M3 10.5l4.2 4.2L17 4.5" stroke="#C39A4E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><strong>Documentos hechos a tu caso</strong><span>Cada familia tiene su historia: bienes distintos, hijos de distintos matrimonios, negocios en marcha. El documento se redacta sobre eso, no sobre un modelo genérico.</span></div>
+        </li>
+        <li>
+          <svg width="19" height="19" viewBox="0 0 20 20" fill="none"><path d="M3 10.5l4.2 4.2L17 4.5" stroke="#C39A4E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><strong>Sin sorpresas en el camino</strong><span>Antes de empezar sabes qué documentos hacen falta, cuánto tarda el proceso y qué costos tiene. Todo por adelantado.</span></div>
+        </li>
+        <li>
+          <svg width="19" height="19" viewBox="0 0 20 20" fill="none"><path d="M3 10.5l4.2 4.2L17 4.5" stroke="#C39A4E" stroke-width="1.7" stroke-linecap="round" stroke-linejoin="round"/></svg>
+          <div><strong>Respuesta por WhatsApp</strong><span>Las dudas no esperan a la próxima cita. Escribes y te respondo directamente.</span></div>
+        </li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<!-- SERVICIOS -->
+<section class="sec sec-bone" id="servicios">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <p class="eyebrow">Nuestros servicios</p>
+      <h2>Tres formas de proteger lo que construiste</h2>
+      <p>Cada caso se revisa por separado. Estos son los instrumentos con los que trabajo a diario.</p>
+    </div>
+    <div class="svc-grid">
+
+      <article class="svc rv">
+        <div class="svc-ico">
+          <svg width="30" height="30" viewBox="0 0 32 32" fill="none" stroke="#E7CB8E" stroke-width="1.3" aria-hidden="true">
+            <path d="M7 27V6.5A1.5 1.5 0 018.5 5H20l5 5v17a1.5 1.5 0 01-1.5 1.5h-15A1.5 1.5 0 017 27z" stroke-linejoin="round"/>
+            <path d="M20 5v5h5" stroke-linejoin="round"/>
+            <path d="M11.5 17.5l4.5-4.5 3 3-4.5 4.5-3.6 1 1.1-3.5z" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Testamento</h3>
+        <p class="svc-tag">Decides tú, no la ley</p>
+        <p>Sin testamento, la ley reparte tus bienes según un orden fijo que puede no coincidir con lo que quieres. El testamento te devuelve esa decisión y la deja escrita de forma que nadie pueda discutirla.</p>
+        <ul>
+          <li>Redacción a partir de tu situación real</li>
+          <li>Revisión de bienes y beneficiarios</li>
+          <li>Acompañamiento ante la notaría</li>
+        </ul>
+        <a href="https://wa.me/584249746949?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20el%20testamento" class="svc-link">Consultar <svg width="14" height="10" viewBox="0 0 16 11" fill="none"><path d="M1 5.5h13M10 1l4.5 4.5L10 10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </article>
+
+      <article class="svc rv">
+        <div class="svc-ico">
+          <svg width="30" height="30" viewBox="0 0 32 32" fill="none" stroke="#E7CB8E" stroke-width="1.3" aria-hidden="true">
+            <rect x="6" y="4.5" width="20" height="23" rx="1.5" stroke-linejoin="round"/>
+            <path d="M10.5 11h11M10.5 15.5h11M10.5 20h6" stroke-linecap="round"/>
+            <circle cx="22" cy="22" r="4.5" fill="#0B1D3A"/>
+            <path d="M20 22l1.5 1.5 3-3" stroke-linecap="round" stroke-linejoin="round"/>
+          </svg>
+        </div>
+        <h3>Declaración sucesoral</h3>
+        <p class="svc-tag">El paso obligatorio para heredar</p>
+        <p>Después de un fallecimiento, ningún bien puede venderse ni traspasarse sin este trámite. Se prepara el expediente, se declaran los bienes y se obtiene la solvencia que permite continuar.</p>
+        <ul>
+          <li>Armado completo del expediente</li>
+          <li>Cálculo y declaración de los bienes</li>
+          <li>Seguimiento hasta la solvencia</li>
+        </ul>
+        <a href="https://wa.me/584249746949?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20la%20declaraci%C3%B3n%20sucesoral" class="svc-link">Consultar <svg width="14" height="10" viewBox="0 0 16 11" fill="none"><path d="M1 5.5h13M10 1l4.5 4.5L10 10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </article>
+
+      <article class="svc rv">
+        <div class="svc-ico">
+          <svg width="30" height="30" viewBox="0 0 32 32" fill="none" stroke="#E7CB8E" stroke-width="1.3" aria-hidden="true">
+            <path d="M4.5 14.5L16 5l11.5 9.5" stroke-linecap="round" stroke-linejoin="round"/>
+            <path d="M7.5 17v10h17V17" stroke-linecap="round" stroke-linejoin="round"/>
+            <circle cx="12.5" cy="21.5" r="1.8"/>
+            <circle cx="19.5" cy="21.5" r="1.8"/>
+            <path d="M9.5 27c0-1.9 1.4-3 3-3s3 1.1 3 3M16.5 27c0-1.9 1.4-3 3-3s3 1.1 3 3" stroke-linecap="round"/>
+          </svg>
+        </div>
+        <h3>Usufructo</h3>
+        <p class="svc-tag">Transferir sin perder el uso</p>
+        <p>Permite pasar la propiedad de un bien a tus hijos o herederos, conservando tú el derecho a usarlo y habitarlo mientras vivas. Una figura muy útil cuando se quiere adelantar el legado sin quedarse sin techo.</p>
+        <ul>
+          <li>Análisis de si conviene en tu caso</li>
+          <li>Redacción del documento de constitución</li>
+          <li>Gestión ante el registro correspondiente</li>
+        </ul>
+        <a href="https://wa.me/584249746949?text=Hola,%20quiero%20informaci%C3%B3n%20sobre%20el%20usufructo" class="svc-link">Consultar <svg width="14" height="10" viewBox="0 0 16 11" fill="none"><path d="M1 5.5h13M10 1l4.5 4.5L10 10" stroke="currentColor" stroke-width="1.4" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+      </article>
+
+    </div>
+  </div>
+</section>
+
+<!-- PROCESO -->
+<section class="sec sec-navy" id="proceso">
+  <div class="wrap">
+    <div class="sec-head rv">
+      <p class="eyebrow on-navy">Cómo trabajamos</p>
+      <h2>Tres pasos, sin vueltas</h2>
+      <p>Desde el primer mensaje hasta el documento firmado, siempre sabes en qué punto estás.</p>
+    </div>
+    <div class="steps">
+      <div class="step rv">
+        <span class="step-n">PASO UNO</span>
+        <div class="step-dot"></div>
+        <h3>Primera conversación</h3>
+        <p>Me cuentas tu situación por WhatsApp o en consulta. Escucho, pregunto lo necesario y te digo con franqueza si hace falta un documento o no.</p>
+      </div>
+      <div class="step rv">
+        <span class="step-n">PASO DOS</span>
+        <div class="step-dot"></div>
+        <h3>Revisión del caso</h3>
+        <p>Reviso los bienes, los documentos existentes y a quiénes involucra. Te presento las opciones con sus ventajas, sus costos y sus tiempos reales.</p>
+      </div>
+      <div class="step rv">
+        <span class="step-n">PASO TRES</span>
+        <div class="step-dot"></div>
+        <h3>Documento y trámite</h3>
+        <p>Redacto lo acordado, lo repasamos juntos y te acompaño ante notaría o registro hasta que queda formalizado. No te suelto a mitad de camino.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- PREGUNTAS -->
+<section class="sec" id="preguntas">
+  <div class="wrap">
+    <div class="sec-head center rv">
+      <p class="eyebrow">Preguntas frecuentes</p>
+      <h2>Lo que más me preguntan</h2>
+    </div>
+    <div class="faq rv">
+
+      <div class="faq-item">
+        <button class="faq-q" type="button">¿Necesito un testamento si no tengo muchos bienes?</button>
+        <div class="faq-a"><p>La cantidad importa menos de lo que parece. Un solo inmueble compartido entre varios herederos puede generar años de desacuerdos. El testamento no depende del tamaño del patrimonio, sino de si quieres decidir tú cómo se reparte.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button">¿Qué es la declaración sucesoral y cuándo hay que hacerla?</button>
+        <div class="faq-a"><p>Es la declaración formal de los bienes que dejó una persona al fallecer. Tiene un plazo legal y, hasta que no se completa, los herederos no pueden vender, traspasar ni poner a su nombre los bienes. En la consulta revisamos tu caso y los plazos que aplican.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button">¿Puedo dejarle la casa a mis hijos y seguir viviendo en ella?</button>
+        <div class="faq-a"><p>Sí, y es justamente para lo que sirve el usufructo: la propiedad pasa a ellos y tú conservas el derecho de usar y habitar el inmueble mientras vivas. Hay condiciones que conviene revisar antes de constituirlo, y eso lo vemos caso por caso.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button">¿Cuánto tiempo toma el proceso?</button>
+        <div class="faq-a"><p>Depende del documento y de qué tan completos estén los recaudos. Un testamento suele resolverse en pocos días; una declaración sucesoral toma más porque involucra trámites ante organismos. Antes de empezar te doy un estimado realista, no uno optimista.</p></div>
+      </div>
+
+      <div class="faq-item">
+        <button class="faq-q" type="button">¿Lo que le cuento es confidencial?</button>
+        <div class="faq-a"><p>Completamente. La información de tu familia, tus bienes y tus decisiones queda entre nosotros. Es una obligación profesional y también una cuestión de respeto hacia lo que estás confiando.</p></div>
+      </div>
+
+    </div>
+  </div>
+</section>
+
+<!-- CTA -->
+<section class="cta" id="contacto">
+  <div class="wrap">
+    <p class="eyebrow on-navy" style="justify-content:center">Consulta hoy</p>
+    <h2>Deja todo en orden, <br><span class="script">hoy</span></h2>
+    <p>Un mensaje basta para empezar. Cuéntame tu caso y te digo con claridad qué necesitas y qué no.</p>
+    <div class="cta-btns">
+      <a href="https://wa.me/584249746949" class="btn btn-gold">Escribir por WhatsApp</a>
+      <a href="https://instagram.com/patrimonioseguro.ve" target="_blank" rel="noopener" class="btn btn-ghost-gold">Ver Instagram</a>
+    </div>
+    <div class="cta-phone-lbl" style="margin-top:34px">Atención directa y confidencial</div>
+    <div class="cta-phone" style="margin-top:0"><a href="https://wa.me/584249746949">0424 974 6949</a></div>
+  </div>
+</section>
+
+<!-- FOOTER -->
+<footer class="foot">
+  <div class="wrap">
+    <div class="foot-grid">
+      <div>
+        <div class="f-brand">Josué Fernández</div>
+        <div class="f-tag">Abogado patrimonial</div>
+        <p style="max-width:34ch">Testamentos, declaraciones sucesorales y usufructo. Protección familiar y legado.</p>
+      </div>
+      <div>
+        <h4>Servicios</h4>
+        <ul>
+          <li><a href="#servicios">Testamento</a></li>
+          <li><a href="#servicios">Declaración sucesoral</a></li>
+          <li><a href="#servicios">Usufructo</a></li>
+        </ul>
+      </div>
+      <div>
+        <h4>Contacto</h4>
+        <ul>
+          <li><a href="https://wa.me/584249746949">0424 974 6949</a></li>
+          <li><a href="https://instagram.com/patrimonioseguro.ve" target="_blank" rel="noopener">@patrimonioseguro.ve</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="foot-bottom">
+      <span>© <span id="year">2026</span> Josué Fernández · Tu patrimonio, nuestra prioridad.</span>
+      <span>Este sitio es informativo y no sustituye una consulta legal.</span>
+    </div>
+  </div>
+</footer>
+
+<a href="https://wa.me/584249746949" class="wa" aria-label="Escribir por WhatsApp">
+  <svg width="30" height="30" viewBox="0 0 32 32" fill="#fff" aria-hidden="true">
+    <path d="M16.1 4C9.5 4 4.2 9.3 4.2 15.9c0 2.1.6 4.1 1.6 5.9L4 28l6.4-1.7c1.7.9 3.7 1.4 5.7 1.4 6.6 0 11.9-5.3 11.9-11.9S22.7 4 16.1 4zm0 21.6c-1.8 0-3.5-.5-5-1.4l-.4-.2-3.8 1 1-3.7-.2-.4c-1-1.6-1.5-3.4-1.5-5.2 0-5.5 4.5-9.9 9.9-9.9s9.9 4.5 9.9 9.9-4.4 9.9-9.9 9.9zm5.5-7.4c-.3-.2-1.8-.9-2-1-.3-.1-.5-.2-.7.2s-.8 1-.9 1.2c-.2.2-.3.2-.6.1-.3-.2-1.3-.5-2.4-1.5-.9-.8-1.5-1.8-1.7-2.1-.2-.3 0-.5.1-.6l.5-.5c.2-.2.2-.3.3-.5.1-.2 0-.4 0-.6s-.7-1.7-1-2.3c-.3-.6-.5-.5-.7-.5h-.6c-.2 0-.6.1-.9.4-.3.3-1.2 1.1-1.2 2.7s1.2 3.1 1.3 3.3c.2.2 2.3 3.6 5.7 5 .8.3 1.4.5 1.9.7.8.3 1.5.2 2.1.1.6-.1 1.8-.8 2.1-1.5.3-.7.3-1.4.2-1.5-.1-.2-.3-.3-.6-.4z"/>
+  </svg>
+</a>
+
+<script>
+(function(){
+  "use strict";
+  function safe(fn){ try{ fn(); }catch(e){} }
+
+  /* Nav sombra al hacer scroll */
+  safe(function(){
+    var nav = document.getElementById('nav');
+    if(!nav) return;
+    var onScroll = function(){
+      if(window.scrollY > 12){ nav.classList.add('stuck'); }
+      else{ nav.classList.remove('stuck'); }
+    };
+    window.addEventListener('scroll', onScroll, {passive:true});
+    onScroll();
+  });
+
+  /* Reveal al entrar en pantalla */
+  safe(function(){
+    var els = document.querySelectorAll('.rv');
+    if(!els.length) return;
+    var showAll = function(){
+      for(var i=0;i<els.length;i++){ els[i].classList.add('in'); }
+    };
+    if(!('IntersectionObserver' in window)){ showAll(); return; }
+    var io = new IntersectionObserver(function(entries){
+      entries.forEach(function(en){
+        if(en.isIntersecting){
+          en.target.classList.add('in');
+          io.unobserve(en.target);
+        }
+      });
+    }, {threshold:0.05, rootMargin:'0px 0px -6% 0px'});
+    for(var i=0;i<els.length;i++){ io.observe(els[i]); }
+    setTimeout(showAll, 2600); /* red de seguridad */
+  });
+
+  /* Acordeón de preguntas */
+  safe(function(){
+    var items = document.querySelectorAll('.faq-item');
+    for(var i=0;i<items.length;i++){
+      (function(item){
+        var btn = item.querySelector('.faq-q');
+        var ans = item.querySelector('.faq-a');
+        if(!btn || !ans) return;
+        btn.setAttribute('aria-expanded','false');
+        btn.addEventListener('click', function(){
+          var isOpen = item.classList.contains('open');
+          for(var j=0;j<items.length;j++){
+            items[j].classList.remove('open');
+            var a = items[j].querySelector('.faq-a');
+            var b = items[j].querySelector('.faq-q');
+            if(a) a.style.maxHeight = null;
+            if(b) b.setAttribute('aria-expanded','false');
+          }
+          if(!isOpen){
+            item.classList.add('open');
+            ans.style.maxHeight = ans.scrollHeight + 'px';
+            btn.setAttribute('aria-expanded','true');
+          }
+        });
+      })(items[i]);
+    }
+  });
+
+  /* Año en el pie */
+  safe(function(){
+    var y = document.getElementById('year');
+    if(y) y.textContent = new Date().getFullYear();
+  });
+})();
+</script>
+</body>
+</html>
